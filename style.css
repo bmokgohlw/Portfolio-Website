@@ -109,3 +109,26 @@ footer {
     height: 200px; 
     margin-bottom: 20px;
 }
+video.banner-image {
+    width: 50px; 
+    height: auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
