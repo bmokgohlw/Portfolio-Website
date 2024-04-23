@@ -1,0 +1,22 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Load dynamic content on home page
+    document.getElementById('welcome-message').textContent = 'Welcome to My Portfolio';
+    document.getElementById('bio-summary').textContent = 'I am deeply passionate about Information Technology and committed to lifelong learning.';
+
+    // Load dynamic content on about page if elements exist
+    const fullBio = document.getElementById('full-bio');
+    const skillsList = document.getElementById('skills-list');
+
+    if (fullBio) {
+        fullBio.textContent = 'Here is a detailed description about Believe Diphofa, his journey and achievements.';
+    }
+
+    if (skillsList) {
+        const skills = ['Mobile Development', 'Software Engineering Fundamentals', 'Team Collaboration', 'Continuous Learning and Adaptation'];
+        skills.forEach(skill => {
+            const li = document.createElement('li');
+            li.textContent = skill;
+            skillsList.appendChild(li);
+        });
+    }
+});

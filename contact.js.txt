@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Implement form submission logic, possibly using Fetch API
+        alert('Thank you for your message!');
+        // Clear form fields after submission
+        form.reset();
+    });
+});

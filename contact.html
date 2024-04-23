@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mokgohlwe Believe Diphofa - Portfolio</title>
+    <title>Contact - Mokgohlwe Believe Diphofa</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -16,16 +15,17 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <div id="home" class="banner-grid">
-        <video controls class="banner-video">
-            <source src="4962650-hd_1280_720_25fps.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="banner-text">
-            <h1 id="welcome-message"></h1>
-            <p id="bio-summary"></p>
-        </div>
-    </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/example" method="POST">
+            <input type="text" name="name" placeholder="Name and Surname" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Email: believemokgohlwe@gmail.com</p>
+        <p>Cell no: 076 017 1421</p>
+    </section>
     <footer>
         <div class="footer-column">
             <p>Polokwane, Limpopo, South Africa</p>
@@ -36,9 +36,9 @@
             </div>
         </div>
         <div class="footer-column">
-            <a href="#home">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="#contact">Contact Us</a>
         </div>
         <div class="footer-column">
             <div class="map-embed">
@@ -46,6 +46,6 @@
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
